@@ -1,0 +1,5 @@
+.history/*
+# OSX dir files
+.DS_Store
+.hugo_build.lock
+public/*

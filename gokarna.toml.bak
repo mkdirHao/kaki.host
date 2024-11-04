@@ -1,0 +1,94 @@
+baseURL = "https://kaki.host"
+defaultContentLanguage = "en"
+enableEmoji = true
+enableRobotsTXT = true
+languageCode = "en"
+# Choose one of emacs, trac or perldoc
+pygmentsStyle = "monokai"
+theme = "gokarna"
+title = "Kaki"
+
+[params]
+  avatarAltText = "avatar"
+  avatarSize = "size-m"
+  avatarURL = "/images/avatar.jpg"
+
+  customHeadHTML = """
+    <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  """
+
+  description = "a man who enjoys cycling🚴 like wind🌀"
+  footer = "Kaki"
+  metaKeywords = ["blog", "Kaki", "hugo"]
+  showBackToTopButton = true # true or false for "back to top" button on posts and pages
+
+  socialIcons = [
+    # {name = "twitter", url = "https://example.com"},
+    # {name = "linkedin", url = "https://example.com"},
+    # {name = "stackoverflow", url = "https://example.com"},
+    # {name = "dribbble", url = "https://example.com"},
+    {name = "instagram", url = "https://www.instagram.com/iamhaokaki/"},
+    {name = "facebook", url = "https://www.facebook.com/iamhaokaki/"},
+    {name = "github", url = "htttps://github.com/mkdirhao"},
+    #{name = "twitch", url = "https://example.com"},
+    {name = "email", url = "mailto:iamhaokaki@gmail.com"},
+    {name = "blog", url = "https://mkdirhao.tech"}
+  ]
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pre = "<span data-feather='home'></span>"
+    url = "/"
+    weight = 1
+
+   [[menu.main]]
+    name = "Blog"
+    pre = "<span data-feather='book'></span>"
+    url = "https://mkdirhao.tech"
+    weight = 2
+
+
+  [[menu.main]]
+    name = "github"
+    pre = "<span data-feather='github'></span>"
+    url = "https://github.com/mkdirhao"
+    weight = 3
+
+#   [[menu.main]]
+#     identifier = "buymeacoffee"
+#     pre = "<span data-feather='coffee'></span>"
+#     url = "https://www.buymeacoffee.com/avijitgupta"
+#     weight = 6
+
+#   [[menu.main]]
+#     identifier = "rss"
+#     pre = "<span data-feather='rss'></span>"
+#     url = "/index.xml"
+#     weight = 7
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false
+
+[minify]
+    minifyOutput = true
