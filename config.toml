@@ -33,6 +33,8 @@ disableKinds = ["taxonomy", "term"]
     # { gitlab = "https://gitlab.com/username" },
     # { google = "https://www.google.com/" },
      { instagram = "https://instagram.com/iamhaokaki" },
+     { youtube = "https://youtube.com/@iamhaokaki" },
+     { tiktok = "https://tiktok.com/@iamhaokaki" },
 
     # { keybase = "https://keybase.io/username" },
     # { kickstarter = "https://www.kickstarter.com/profile/username" },
